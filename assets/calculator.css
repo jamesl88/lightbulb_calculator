@@ -1,0 +1,206 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+#lightbulbCalculator {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 800px;
+}
+
+#lightbulbCalculator main {
+  background-color: #444;
+}
+
+#lightbulbCalculator main section {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-top: 110px;
+  color: #FFF;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 63px 100px;
+}
+
+#lightbulbCalculator main:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#lightbulbCalculator main section.inc {
+  background-color: #BA2D2D;
+  background-image: url('images/bulb_inc.svg')
+}
+
+#lightbulbCalculator main section.hal {
+  background-color: #DE6615;
+  background-image: url('images/bulb_hal.svg')
+}
+
+#lightbulbCalculator main section.cfl {
+  background-color: #EFC20F;
+  background-image: url('images/bulb_cfl.svg')
+}
+
+#lightbulbCalculator main section.led {
+  background-color: #36B23C;
+  background-image: url('images/bulb_led.svg')
+}
+
+#lightbulbCalculator main section > div {
+  padding: 5px 0;
+  background-color: rgba(0,0,0, .15);
+}
+
+#lightbulbCalculator main h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: .8em;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+}
+
+#lightbulbCalculator main p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#lightbulbCalculator main p + p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#lightbulbCalculator main p::after {
+  content: 'w';
+}
+
+#lightbulbCalculator main p + p::before {
+  content: '£';
+}
+
+#lightbulbCalculator main p + p::after {
+  content: 'per year';
+  color: rgba(255,255,255, .5);
+  padding-left: 4px;
+}
+
+#lightbulbCalculator form {
+  background-color: #000;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#lightbulbCalculator form br {
+  display: none;
+}
+
+#lightbulbCalculator form > div {
+  color: #FFF;
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 10px 0 5px 0;
+}
+
+#lightbulbCalculator form::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#lightbulbCalculator form h4 {
+  color: #AAA;
+  margin: 0 0 -5px 0;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#lightbulbCalculator form p {
+  color: #888;
+  margin: 0 0 6px 0;
+  font-size: .9em;
+}
+
+#lightbulbCalculator form input[type=number] {
+  width: 50px;
+  text-align: left;
+  font-size: 1em;
+  border-radius: 3px;
+}
+
+#lightbulbCalculator form select {
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: #FFF url(images/icons_arrows.svg) no-repeat right 6px;
+  background-size: 30px 20px;
+  padding: 3px 30px 3px 5px;
+}
+
+#lightbulbCalculator form select::-ms-expand {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  #lightbulbCalculator {
+    font-size: 15px;
+  }
+
+  #lightbulbCalculator main section {
+    background-size: 45px 71px;
+    padding-top: 80px;
+  }
+
+  #lightbulbCalculator main h4 {
+    margin: 0;
+    font-size: .75em;
+    letter-spacing: 0;
+  }
+
+  #lightbulbCalculator main p {
+    font-size: 1.1em;
+  }
+
+  #lightbulbCalculator main p + p {
+    font-size: 1em;
+  }
+
+  #lightbulbCalculator main p + p::after {
+    display: block;
+    margin-top: -10px;
+    color: #FFF;
+  }
+
+  #lightbulbCalculator form h4 {
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  #lightbulbCalculator form p {
+    font-size: .8em;
+    line-height: 14px;
+  }
+
+  #lightbulbCalculator form br {
+    display: inline;
+  }
+
+  #lightbulbCalculator form input[type=number] {
+    width: 30px;
+    font-size: .8em;
+    border-radius: 3px;
+  }
+
+  #lightbulbCalculator form select {
+    font-size: .8em;
+  }
+}
